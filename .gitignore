@@ -17,6 +17,7 @@ data/raw/peptide_details/
 data/processed/activity_measurements.csv
 data/processed/activity_measurements_partial.csv
 data/processed/failed_peptide_ids.csv
+data/processed/analysis/
 
 # OS files
 .DS_Store

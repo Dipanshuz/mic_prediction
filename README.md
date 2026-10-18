@@ -238,28 +238,36 @@ The models will be evaluated using appropriate regression metrics, including:
 
 We also plan to use sequence-identity-controlled evaluation to reduce overly optimistic results caused by similar peptide sequences appearing across training and test sets.
 
-## 12. Current Status and Next Steps
+## 12. Analyze the Collected Dataset
+
+After the detailed extraction completes, run:
+
+```bash
+python src/analyze_dataset.py
+```
+
+The analysis reads `data/processed/activity_measurements.csv` when available. If the final file does not exist, it falls back to `activity_measurements_partial.csv` and marks the report as incomplete. To select an input explicitly:
+
+```bash
+python src/analyze_dataset.py --input data/processed/activity_measurements.csv
+```
+
+Analysis products are written to `data/processed/analysis/`, including a Markdown report, JSON summary, CSV frequency and quality tables, and histograms. MIC concentration statistics use the `concentration` field because `unit` describes that field; the separate `activity` field is not assumed to be an interchangeable concentration. Ranges and censored values remain visible in the report but are excluded from exact-value numeric summaries. Molar units are standardized to µM and mass/volume units to µg/mL; cross-dimensional conversion is not attempted without validated molecular weights.
+
+Target names are counted exactly as supplied by DBAASP rather than automatically interpreted as confirmed strain identifiers. Peptide lengths are counted once per peptide; for multimers without a parent sequence, the sum of monomer lengths is reported as a component-length total.
+
+## 13. Current Status and Next Steps
 
 ### Completed
 
-- Tested the DBAASP peptide listing API.
-- Verified that different pagination offsets return records.
-- Inspected an individual peptide's detailed API response.
-- Extracted activity measurements for one sample peptide.
-- Saved the sample measurements as a CSV file.
+- Downloaded all peptide metadata pages reported by the API.
+- Implemented a resumable detailed activity extractor.
+- Added a reusable analysis script for MIC concentrations, target counts, peptide lengths, and data quality.
 
 ### Pending
 
-- Implement reliable collection of all peptide metadata.
-- Retrieve detailed activity measurements systematically.
-- Validate pagination and handle API errors and retries.
-- Preserve raw API responses.
-- Build the complete activity dataset.
+- Complete detailed activity extraction across the peptide metadata.
+- Run and review the analysis on the completed activity dataset.
 - Audit MIC fields, units, ranges, and target information.
 - Clean and validate the dataset.
 - Train and evaluate the prediction models.
-
-team members:
-nehal
-dhriti
-takshita
