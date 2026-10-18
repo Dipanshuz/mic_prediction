@@ -1,0 +1,27 @@
+peptide_id,peptide_name,sequence,measurement_id,target_species,activity_measure,activity_measure_value,activity,concentration,unit,medium,cfu,ph,ionic_strength,salt_type,note,reference
+1,Distinctin,,20652,Escherichia coli ATCC 25922,MIC,MIC,0.26129,14.5,µM,TSB,,,,,,1
+1,Distinctin,,20653,Staphylococcus aureus ATCC 25923,MIC,MIC,0.50456,28.0,µM,TSB,,,,,,1
+1,Distinctin,,20654,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,0.50456,28.0,µM,TSB,,,,,,1
+1,Distinctin,,20655,Enterococcus faecalis ATCC 29212,MIC,MIC,0.26129,14.5,µM,TSB,,,,,,1
+1,Distinctin,,66939,Escherichia coli,MIC,MIC,0.21047361,0.73-11.68,µM,MHB,5E5,,,,10 Clinical isolates,2
+1,Distinctin,,66942,Escherichia coli,MBC,MBC,0.42094722,1.46-23.36,µM,MHB,5E5,,,,10 Clinical isolates,2
+1,Distinctin,,66945,Klebsiella pneumoniae,MIC,MIC,0.4211274,0.73-23.37,µM,MHB,5E5,,,,10 Clinical isolates,2
+1,Distinctin,,66948,Klebsiella pneumoniae,MBC,MBC,0.42094722,1.46-23.36,µM,MHB,5E5,,,,10 Clinical isolates,2
+1,Distinctin,,66951,Serratia marcescens,MIC,MIC,0.8420746,1.46-46.73,µM,MHB,5E5,,,,10 Clinical isolates,2
+1,Distinctin,,66954,Serratia marcescens,MBC,MBC,0.8420746,1.46-46.73,µM,MHB,5E5,,,,10 Clinical isolates,2
+1,Distinctin,,66957,Stenotrophomonas maltophilia,MIC,MIC,0.84297556,2.92-46.78,µM,MHB,5E5,,,,8 Clinical isolates,2
+1,Distinctin,,66958,Stenotrophomonas maltophilia,MBC,MBC,46.73,2.92-46.73,µg/ml,MHB,5E5,,,,8 Clinical isolates,2
+1,Distinctin,,66959,Acinetobacter baumannii,MIC,MIC,0.8420746,2.92-46.73,µM,MHB,5E5,,,,8 Clinical isolates,2
+1,Distinctin,,66960,Acinetobacter baumannii,MBC,MBC,0.8420746,2.92-46.73,µM,MHB,5E5,,,,8 Clinical isolates,2
+1,Distinctin,,66961,Pseudomonas aeruginosa,MIC,MIC,0.8420746,2.92-46.73,µM,MHB,5E5,,,,10 Clinical isolates,2
+1,Distinctin,,66964,Pseudomonas aeruginosa,MBC,MBC,0.8420746,2.92-46.73,µM,MHB,5E5,,,,10 Clinical isolates,2
+1,Distinctin,,66967,Staphylococcus aureus,MIC,MIC,0.42094722,0.73-23.36,µM,MHB,5E5,,,,10 MSSA Clinical isolates,2
+1,Distinctin,,66970,Staphylococcus aureus,MBC,MBC,0.42094722,1.46-23.36,µM,MHB,5E5,,,,10 MSSA Clinical isolates,2
+1,Distinctin,,66973,Staphylococcus aureus MR,MIC,MIC,0.42094722,0.73-23.36,µM,MHB,5E5,,,,10 MRSA Clinical isolates,2
+1,Distinctin,,66976,Staphylococcus aureus MR,MBC,MBC,0.42094722,1.46-23.36,µM,MHB,5E5,,,,10 MRSA Clinical isolates,2
+1,Distinctin,,66979,Streptococcus pneumoniae,MIC,MIC,0.42094722,0.73-23.36,µM,MHB,5E5,,,,10 Clinical isolates,2
+1,Distinctin,,66982,Streptococcus pneumoniae,MBC,MBC,0.42094722,0.73-23.36,µM,MHB,5E5,,,,10 Clinical isolates,2
+1,Distinctin,,66985,Enterococcus faecium,MIC,MIC,0.8420746,2.92-46.73,µM,MHB,5E5,,,,5 Clinical isolates,2
+1,Distinctin,,66986,Enterococcus faecium,MBC,MBC,0.8420746,2.92-46.73,µM,MHB,5E5,,,,5 Clinical isolates,2
+1,Distinctin,,66987,Enterococcus faecalis,MIC,MIC,0.42094722,0.73-23.36,µM,MHB,5E5,,,,10 Clinical isolates,2
+1,Distinctin,,66990,Enterococcus faecalis,MBC,MBC,0.42094722,1.46-23.36,µM,MHB,5E5,,,,10 Clinical isolates,2

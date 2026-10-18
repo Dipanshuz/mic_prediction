@@ -1,1 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
 .venv/
+venv/
+
+# Environment variables
+.env
+
+# Downloaded raw data
+data/raw/peptide_pages/
+data/raw/peptide_details/
+
+# Generated datasets
+data/processed/activity_measurements.csv
+data/processed/activity_measurements_partial.csv
+data/processed/failed_peptide_ids.csv
+
+# OS files
+.DS_Store
