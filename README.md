@@ -258,3 +258,8 @@ We also plan to use sequence-identity-controlled evaluation to reduce overly opt
 - Audit MIC fields, units, ranges, and target information.
 - Clean and validate the dataset.
 - Train and evaluate the prediction models.
+
+team members:
+nehal
+dhriti
+takshita
