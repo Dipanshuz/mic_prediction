@@ -1,5 +1,7 @@
 import json
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import pandas as pd
@@ -17,9 +19,17 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 BASE_URL = "https://dbaasp.org/peptides"
 
-# Retry temporary network/server errors
-session = requests.Session()
+# Number of parallel requests. The API is slow (~1.7 s per request),
+# so a few concurrent workers help a lot. Keep this small to stay polite.
+MAX_WORKERS = 5
 
+# Delay after each real network request, per worker.
+REQUEST_DELAY = 0.3
+
+# How often to report progress and save the partial CSV.
+SAVE_EVERY = 500
+
+# Retry temporary network/server errors
 retry_strategy = Retry(
     total=4,
     backoff_factor=1,
@@ -27,9 +37,20 @@ retry_strategy = Retry(
     allowed_methods=["GET"],
 )
 
-adapter = HTTPAdapter(max_retries=retry_strategy)
-session.mount("https://", adapter)
-session.headers.update({"Accept": "application/json"})
+# One session per thread, since sessions are not guaranteed thread-safe.
+thread_local = threading.local()
+
+
+def get_session():
+    session = getattr(thread_local, "session", None)
+
+    if session is None:
+        session = requests.Session()
+        session.mount("https://", HTTPAdapter(max_retries=retry_strategy))
+        session.headers.update({"Accept": "application/json"})
+        thread_local.session = session
+
+    return session
 
 
 def load_peptide_ids():
@@ -68,19 +89,43 @@ def fetch_details(peptide_id):
 
     url = f"{BASE_URL}/{peptide_id}"
 
-    response = session.get(url, timeout=45)
-    response.raise_for_status()
+    try:
+        response = get_session().get(url, timeout=45)
+        response.raise_for_status()
 
-    result = response.json()
+        result = response.json()
 
-    if not isinstance(result, dict):
-        raise ValueError("Unexpected response format")
+        if not isinstance(result, dict):
+            raise ValueError("Unexpected response format")
 
-    # Save the original response without modifying its fields.
-    with output_file.open("w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False)
+        # Save the original response without modifying its fields.
+        # Write to a temp file first so an interrupted run never
+        # leaves a half-written cache file behind.
+        tmp_file = output_file.with_suffix(".json.tmp")
+        with tmp_file.open("w", encoding="utf-8") as f:
+            json.dump(result, f, ensure_ascii=False)
+        tmp_file.replace(output_file)
 
-    return result
+        return result
+    finally:
+        # Be polite to the API; only delay after real requests.
+        time.sleep(REQUEST_DELAY)
+
+
+def process_peptide(peptide_id):
+    """Fetch one peptide and return (rows, error). Runs in a worker thread."""
+    try:
+        result = fetch_details(peptide_id)
+        peptide = get_peptide_object(result)
+
+        # A response without a peptide ID is treated as invalid.
+        if not peptide or peptide.get("id") is None:
+            raise ValueError("Peptide details missing from response")
+
+        return extract_measurements(peptide), None
+
+    except Exception as error:
+        return [], {"peptide_id": peptide_id, "error": str(error)}
 
 
 def get_peptide_object(result):
@@ -148,46 +193,47 @@ def main():
     failed_ids = []
     processed = 0
 
-    for peptide_id in peptide_ids:
-        try:
-            result = fetch_details(peptide_id)
-            peptide = get_peptide_object(result)
+    partial_file = OUTPUT_DIR / "activity_measurements_partial.csv"
+    partial_file.unlink(missing_ok=True)
+    unsaved_rows = []
+    start_time = time.time()
 
-            # A response without a peptide ID is treated as invalid.
-            if not peptide or peptide.get("id") is None:
-                raise ValueError("Peptide details missing from response")
+    # executor.map returns results in input order, so the output
+    # stays sorted by peptide ID even though fetching is parallel.
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        for rows, error in executor.map(process_peptide, peptide_ids):
+            all_rows.extend(rows)
+            unsaved_rows.extend(rows)
 
-            all_rows.extend(extract_measurements(peptide))
+            if error:
+                failed_ids.append(error)
 
-        except Exception as error:
-            failed_ids.append({
-                "peptide_id": peptide_id,
-                "error": str(error),
-            })
+            processed += 1
 
-        processed += 1
+            # Save progress periodically by appending only the new rows,
+            # instead of rewriting the whole file each time.
+            if processed % SAVE_EVERY == 0 or processed == len(peptide_ids):
+                if unsaved_rows:
+                    pd.DataFrame(unsaved_rows).to_csv(
+                        partial_file,
+                        mode="a",
+                        header=not partial_file.exists(),
+                        index=False,
+                    )
+                    unsaved_rows = []
 
-        # Save progress every 100 peptide records.
-        if processed % 100 == 0 or processed == len(peptide_ids):
-            df = pd.DataFrame(all_rows)
-            df.to_csv(
-                OUTPUT_DIR / "activity_measurements_partial.csv",
-                index=False,
-            )
+                pd.DataFrame(failed_ids).to_csv(
+                    OUTPUT_DIR / "failed_peptide_ids.csv",
+                    index=False,
+                )
 
-            pd.DataFrame(failed_ids).to_csv(
-                OUTPUT_DIR / "failed_peptide_ids.csv",
-                index=False,
-            )
-
-            print(
-                f"Processed {processed}/{len(peptide_ids)} | "
-                f"Measurements collected: {len(all_rows)} | "
-                f"Failures: {len(failed_ids)}"
-            )
-
-        # Be polite to the API; this is a large collection job.
-        time.sleep(0.3)
+                elapsed = time.time() - start_time
+                print(
+                    f"Processed {processed}/{len(peptide_ids)} | "
+                    f"Measurements collected: {len(all_rows)} | "
+                    f"Failures: {len(failed_ids)} | "
+                    f"Elapsed: {elapsed / 60:.1f} min"
+                )
 
     # Save final output.
     df = pd.DataFrame(all_rows)
