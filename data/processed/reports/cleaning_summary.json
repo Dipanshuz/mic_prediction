@@ -1,0 +1,15 @@
+{
+  "input_file": "data\\processed\\activity_measurements.csv",
+  "input_activity_rows": 197338,
+  "unique_peptides_in_activity_rows": 24919,
+  "MIC_rows": 142169,
+  "non_MIC_rows_retained_in_audit": 55169,
+  "unique_MIC_units": 2,
+  "unknown_or_unparsed_units_MIC": 37,
+  "MIC_values_not_parsed": 3745,
+  "MIC_rows_with_uM_conversion": 113145,
+  "sequence_representation_missing_MIC_rows": 0,
+  "sequence_length_min": 1.0,
+  "sequence_length_max": 190.0,
+  "note": "If the input is activity_sample.csv, these are sample-only statistics, not DBAASP-wide statistics. Mass-to-molar conversions are estimates for canonical linear sequences only."
+}
