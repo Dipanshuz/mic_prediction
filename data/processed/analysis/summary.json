@@ -1,0 +1,137 @@
+{
+  "coverage": {
+    "input_file": "C:\\Users\\nehal\\OneDrive\\Desktop\\Projects\\mic_prediction\\data\\processed\\activity_measurements.csv",
+    "activity_rows": 197338,
+    "mic_measurements": 145745,
+    "metadata_records_expected": 25542,
+    "metadata_api_total_count": 25542,
+    "detail_files_downloaded": 3541,
+    "failed_peptide_ids": 0,
+    "detail_download_coverage_percent": 13.86,
+    "extraction_complete": false
+  },
+  "mic": {
+    "measurement_count": 145745,
+    "missing_concentration_count": 19,
+    "raw_unique_concentration_values": 7344,
+    "exact_numeric_unique_values_by_unit": 2920,
+    "exact_numeric_count": 102517,
+    "range_count": 7656,
+    "censored_count": 31509,
+    "unparsed_count": 4044,
+    "exact_numeric_statistics_by_unit": [
+      {
+        "count": 15,
+        "minimum": 0.015,
+        "maximum": 128.0,
+        "mean": 23.265,
+        "median": 3.13,
+        "quantiles": {
+          "0.25": 1.6,
+          "0.5": 3.13,
+          "0.75": 14.25,
+          "0.9": 89.59999999999997,
+          "0.95": 128.0
+        },
+        "unit": "Unknown unit",
+        "exact_count": 15,
+        "range_count": 4,
+        "censored_count": 4,
+        "unparsed_count": 0,
+        "missing_count": 14
+      },
+      {
+        "count": 51694,
+        "minimum": 6.1e-05,
+        "maximum": 30000.0,
+        "mean": 47.96722620886369,
+        "median": 8.0,
+        "quantiles": {
+          "0.25": 3.1,
+          "0.5": 8.0,
+          "0.75": 25.0,
+          "0.9": 64.0,
+          "0.95": 128.0
+        },
+        "unit": "uM",
+        "exact_count": 51694,
+        "range_count": 4452,
+        "censored_count": 16498,
+        "unparsed_count": 2704,
+        "missing_count": 3
+      },
+      {
+        "count": 50808,
+        "minimum": 2.2e-05,
+        "maximum": 36150.0,
+        "mean": 57.33812793686034,
+        "median": 12.5,
+        "quantiles": {
+          "0.25": 4.0,
+          "0.5": 12.5,
+          "0.75": 32.0,
+          "0.9": 125.0,
+          "0.95": 211.0
+        },
+        "unit": "ug/mL",
+        "exact_count": 50808,
+        "range_count": 3200,
+        "censored_count": 15007,
+        "unparsed_count": 1340,
+        "missing_count": 2
+      }
+    ]
+  },
+  "targets": {
+    "unique_nonempty_target_labels": 6321,
+    "missing_target_count": 0,
+    "most_tested_target_labels": [
+      "Escherichia coli ATCC 25922"
+    ],
+    "most_tested_target_peptide_count": 7464,
+    "most_measurement_target_labels": [
+      "Escherichia coli ATCC 25922"
+    ],
+    "most_measurement_target_count": 9548,
+    "peptides_tested_against_multiple_target_labels": 18671
+  },
+  "peptide_lengths": {
+    "unique_peptides_with_mic": 20608,
+    "peptides_with_length": 20608,
+    "peptides_without_length": 0,
+    "minimum_aa": 1,
+    "maximum_aa": 190,
+    "mean_aa": 17.315217391304348,
+    "median_aa": 14.0,
+    "mode_aa": 13,
+    "distribution": {
+      "count": 20608,
+      "minimum": 1.0,
+      "maximum": 190.0,
+      "mean": 17.315217391304348,
+      "median": 14.0,
+      "quantiles": {
+        "0.25": 10.0,
+        "0.5": 14.0,
+        "0.75": 21.0,
+        "0.9": 30.0,
+        "0.95": 38.0
+      }
+    }
+  },
+  "quality": {
+    "exact_duplicate_rows_additional_copies": 0,
+    "duplicate_measurement_id_groups": 0,
+    "duplicate_measurement_id_rows_additional_copies": 0,
+    "repeated_measurement_key_rows": 2683,
+    "repeated_measurement_key_groups": 1199,
+    "peptide_target_pairs_with_incompatible_unit_dimensions": 315,
+    "unit_conversions": "Molar units are standardized to uM; mass/volume units to ug/mL. No mass-to-molar conversion is attempted because molecular weights and modification states are not validated."
+  },
+  "interpretation": {
+    "concentration_column": "MIC numeric statistics use the raw concentration field because the unit column describes that field. The separate activity field is retained in the source data and is not assumed to be the concentration.",
+    "ranges_and_censoring": "Range and threshold measurements are counted separately and excluded from exact-value mean, median, quantile, and histogram calculations.",
+    "targets": "Target labels are reported exactly as supplied by DBAASP; species-level labels are not treated as confirmed strains.",
+    "multimers": "For a multimer with no parent sequence, length uses the sum of monomer sequence lengths when available; this is a component-length sum, not a claim that the chains form one linear sequence."
+  }
+}

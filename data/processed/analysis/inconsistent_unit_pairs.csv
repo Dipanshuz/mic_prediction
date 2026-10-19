@@ -1,0 +1,316 @@
+peptide_id,target_species,unit_count,units,measurement_count
+3116,Escherichia coli ATCC 25922,2,µM; µg/ml,12
+1003,Escherichia coli D31,2,µM; µg/ml,11
+3116,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,10
+8864,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,8
+12397,Staphylococcus aureus,2,µM; µg/ml,7
+4652,Escherichia coli ATCC 25922,2,µM; µg/ml,7
+491,Escherichia coli ATCC 25922,2,µM; µg/ml,7
+7144,Staphylococcus aureus ATCC 29213,2,µM; µg/ml,7
+7146,Staphylococcus aureus ATCC 29213,2,µM; µg/ml,7
+1361,Escherichia coli ATCC 25922,2,µM; µg/ml,6
+2229,Escherichia coli ATCC 25922,2,µM; µg/ml,6
+4536,Escherichia coli ATCC 25922,2,µM; µg/ml,6
+20973,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,5
+2370,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,5
+360,Escherichia coli ATCC 25922,2,µM; µg/ml,5
+6542,Candida albicans,2,µM; µg/ml,5
+707,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,5
+7105,Pseudomonas aeruginosa PAO1,2,µM; µg/ml,5
+7105,Staphylococcus aureus USA 300,2,µM; µg/ml,5
+7127,Staphylococcus aureus ATCC 15752,2,µM; µg/ml,5
+764,Escherichia coli ATCC 25922,2,µM; µg/ml,5
+948,Escherichia coli ATCC 25922,2,µM; µg/ml,5
+1076,Pseudomonas aeruginosa,2,µM; µg/ml,4
+11,Salmonella enterica subsp. enterica serovar Typhimurium ATCC 14028,2,µM; µg/ml,4
+1320,Escherichia coli ATCC 25922,2,µM; µg/ml,4
+14027,Escherichia coli ATCC 25922,2,µM; µg/ml,4
+14258,Escherichia coli ATCC 25922,2,µM; µg/ml,4
+17218,Escherichia coli ATCC 25922,2,µM; µg/ml,4
+17218,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,4
+17513,Staphylococcus aureus MW2,2,µM; µg/ml,4
+21181,Staphylococcus aureus ATCC 29213,2,; µM,4
+21735,Klebsiella pneumoniae ATCC 43816,2,; µM,4
+24381,Pseudomonas aeruginosa ATCC 10145,2,; µM,4
+3772,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,4
+506,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,4
+5135,Escherichia coli ATCC 25922,2,µM; µg/ml,4
+570,Escherichia coli ATCC 25922,2,µM; µg/ml,4
+7111,Pseudomonas aeruginosa PAO1,2,µM; µg/ml,4
+7127,Candida albicans ATCC 10231,2,µM; µg/ml,4
+764,Pseudomonas aeruginosa,2,µM; µg/ml,4
+779,Escherichia coli ATCC 25922,2,µM; µg/ml,4
+10099,Enterococcus faecalis ATCC 29212,2,µM; µg/ml,3
+10099,Escherichia coli ATCC 11775,2,µM; µg/ml,3
+10099,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,3
+10300,Escherichia coli MG1655,2,µM; µg/ml,3
+1073,Pseudomonas aeruginosa PAO1,2,µM; µg/ml,3
+11,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+11025,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+11025,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,3
+11026,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+11026,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,3
+11060,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+1136,Staphylococcus aureus ATCC 29213,2,µM; µg/ml,3
+12089,Enterococcus faecalis ATCC 51575,2,µM; µg/ml,3
+12089,Staphylococcus aureus KCCM 40510,2,µM; µg/ml,3
+1241,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+1241,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,3
+1320,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,3
+1320,Staphylococcus aureus MR,2,µM; µg/ml,3
+13726,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,3
+146,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+14625,Staphylococcus aureus AB94004,2,µM; µg/ml,3
+1465,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+16406,Escherichia coli ATCC 25922,2,; µM,3
+17218,Klebsiella pneumoniae ATCC 700603,2,µM; µg/ml,3
+1739,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+17519,Staphylococcus aureus MW2,2,µM; µg/ml,3
+17523,Staphylococcus aureus MW2,2,µM; µg/ml,3
+2025,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+2025,Escherichia coli ML-35p,2,µM; µg/ml,3
+2025,Listeria monocytogenes EGD,2,µM; µg/ml,3
+2025,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,3
+2025,Staphylococcus aureus,2,µM; µg/ml,3
+2025,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,3
+2027,Staphylococcus aureus,2,µM; µg/ml,3
+20973,Pseudomonas aeruginosa PAO1,2,µM; µg/ml,3
+2159,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+2159,Staphylococcus aureus ATCC 29213,2,µM; µg/ml,3
+2229,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,3
+2229,Staphylococcus aureus ATCC 29213,2,µM; µg/ml,3
+2261,Klebsiella pneumoniae,2,µM; µg/ml,3
+2261,Pseudomonas aeruginosa,2,µM; µg/ml,3
+2261,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,3
+23540,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+2370,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+260,Acinetobacter baumannii DSM 30007,2,µM; µg/ml,3
+260,Escherichia coli DSM 30083,2,µM; µg/ml,3
+260,Staphylococcus aureus ATCC 43300,2,µM; µg/ml,3
+260,Staphylococcus aureus DSM 20231,2,µM; µg/ml,3
+3148,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+3274,Candida tropicalis CT14/HK,2,µM; µg/ml,3
+3458,Candida tropicalis CT14/HK,2,µM; µg/ml,3
+447,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+447,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,3
+5620,Escherichia coli,2,µM; µg/ml,3
+5620,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,3
+710,Candida albicans ATCC 90028,2,µM; µg/ml,3
+7111,Staphylococcus aureus,2,µM; µg/ml,3
+7111,Staphylococcus aureus SAP 0017,2,µM; µg/ml,3
+7447,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,3
+779,Staphylococcus aureus ATCC 29213,2,µM; µg/ml,3
+806,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,3
+8170,Staphylococcus aureus ATCC 6538,2,µM; µg/ml,3
+850,Klebsiella pneumoniae,2,µM; µg/ml,3
+8864,Acinetobacter baumannii,2,µM; µg/ml,3
+9004,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+9004,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,3
+9005,Escherichia coli ATCC 25922,2,µM; µg/ml,3
+9005,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,3
+948,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,3
+1003,Pseudomonas aeruginosa,2,µM; µg/ml,2
+1009,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+10107,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+1023,Pseudomonas aeruginosa PAO1,2,µM; µg/ml,2
+1030,Escherichia coli DH5alpha,2,µM; µg/ml,2
+1030,Escherichia coli DSM 1103,2,µM; µg/ml,2
+1030,Staphylococcus aureus DSM 1104,2,µM; µg/ml,2
+10356,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+1052,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+10691,Lactococcus lactis subsp. lactis BGMN1-596,2,µM; µg/ml,2
+10691,Listeria monocytogenes ATCC 19111,2,µM; µg/ml,2
+10691,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+1074,Pseudomonas aeruginosa PAO1,2,µM; µg/ml,2
+10759,Escherichia coli DH5alpha,2,µM; µg/ml,2
+1076,Klebsiella pneumoniae,2,µM; µg/ml,2
+10760,Escherichia coli DH5alpha,2,µM; µg/ml,2
+11,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+11018,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+11018,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+11025,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+11026,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+11125,Pseudomonas aeruginosa PAO1,2,µM; µg/ml,2
+11134,Mycobacterium tuberculosis H37Rv,2,µM; µg/ml,2
+11135,Mycobacterium tuberculosis H37Rv,2,µM; µg/ml,2
+1121,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+1121,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+1121,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+11540,Staphylococcus aureus,2,µM; µg/ml,2
+1160,Salmonella enterica subsp. enterica serovar Newport,2,µM; µg/ml,2
+11843,Staphylococcus aureus ATCC 33592,2,µM; µg/ml,2
+12089,Pseudomonas aeruginosa KCTC 1637,2,µM; µg/ml,2
+12089,Staphylococcus aureus KCTC 1621,2,µM; µg/ml,2
+12114,Staphylococcus aureus,2,µM; µg/ml,2
+1241,Candida tropicalis ATCC 750,2,µM; µg/ml,2
+1241,Klebsiella pneumoniae ATCC 700603,2,µM; µg/ml,2
+1241,Staphylococcus aureus ATCC 29213,2,µM; µg/ml,2
+12454,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+12454,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+1269,Pseudomonas aeruginosa PAO1,2,µM; µg/ml,2
+1269,Staphylococcus aureus USA 300,2,µM; µg/ml,2
+12842,Escherichia coli ATCC 8739,2,µM; µg/ml,2
+12842,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+13726,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+13726,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+13728,Pseudomonas aeruginosa NBRC 13275,2,; µM,2
+14088,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+14088,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+14092,Enterococcus faecalis ATCC 29212,2,µM; µg/ml,2
+1440,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+1441,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+1443,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+1465,Bacillus subtilis AB91021,2,µM; µg/ml,2
+1465,Bacillus thuringiensis AB92037,2,µM; µg/ml,2
+1465,Escherichia coli AB94012,2,µM; µg/ml,2
+1465,Micrococcus luteus AB93113,2,µM; µg/ml,2
+1465,Pseudomonas aeruginosa AB93066,2,µM; µg/ml,2
+1465,Staphylococcus aureus AB94004,2,µM; µg/ml,2
+1465,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+1465,Staphylococcus aureus P1369,2,µM; µg/ml,2
+1465,Staphylococcus aureus P1374,2,µM; µg/ml,2
+1465,Staphylococcus aureus P1383,2,µM; µg/ml,2
+1466,Escherichia coli,2,µM; µg/ml,2
+1466,Pseudomonas aeruginosa,2,µM; µg/ml,2
+14823,Salmonella enterica subsp. enterica serovar Typhimurium ATCC 13311,2,µM; µg/ml,2
+1485,Salmonella enterica subsp. enterica serovar Typhimurium ATCC 14028,2,µM; µg/ml,2
+1485,Salmonella enterica subsp. enterica serovar Typhimurium ATCC 700408,2,µM; µg/ml,2
+1485,Staphylococcus aureus,2,µM; µg/ml,2
+1584,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+1639,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+165,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+1672,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+17218,Pseudomonas aeruginosa,2,µM; µg/ml,2
+1778,Candida albicans,2,µM; µg/ml,2
+1778,Staphylococcus aureus 710A,2,µM; µg/ml,2
+17803,Staphylococcus aureus USA 300,2,µM; µg/ml,2
+18386,Bacillus subtilis ATCC 6633,2,µM; µg/ml,2
+18759,Acinetobacter baumannii ATCC 19606,2,µM; µg/ml,2
+18759,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+18759,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+197,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+197,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+2025,Pseudomonas aeruginosa,2,µM; µg/ml,2
+20291,Staphylococcus aureus ATCC 12600,2,µM; µg/ml,2
+20775,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+20780,Escherichia coli SME98,2,; µM,2
+21014,Candida albicans,2,µM; µg/ml,2
+21014,Candida albicans ATCC 10231,2,µM; µg/ml,2
+21167,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+21540,Staphylococcus aureus,2,; µg/ml,2
+21544,Staphylococcus aureus,2,; µg/ml,2
+2162,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+21715,Escherichia coli ATCC 8739,2,; µM,2
+2197,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+2229,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+22551,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+22551,Staphylococcus aureus ATCC 29213,2,µM; µg/ml,2
+2261,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+2261,Klebsiella pneumoniae ATCC 700603,2,µM; µg/ml,2
+23372,Proteus mirabilis,2,; µM,2
+23554,Enterococcus faecalis ATCC 29212,2,µM; µg/ml,2
+23554,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+23555,Enterococcus faecalis ATCC 29212,2,µM; µg/ml,2
+23555,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+2538,Vibrio alginolyticus ATCC 17749,2,µM; µg/ml,2
+256,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+25658,Bacillus subtilis KCTC 1021,2,µM; µg/ml,2
+257,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+260,Staphylococcus aureus SG511,2,µM; µg/ml,2
+261,Candida albicans ATCC 90028,2,µM; µg/ml,2
+2854,Pseudomonas aeruginosa ATCC 9027,2,µM; µg/ml,2
+2854,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+3114,Staphylococcus aureus ATCC 43300,2,µM; µg/ml,2
+3140,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+3141,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+3247,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+331,Streptococcus mutans UA159,2,µM; µg/ml,2
+3598,Vibrio harveyi IFREMER,2,µM; µg/ml,2
+37,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+37,Escherichia coli DSM 1103,2,µM; µg/ml,2
+37,Staphylococcus aureus DSM 1104,2,µM; µg/ml,2
+37,Staphylococcus aureus USA 300,2,µM; µg/ml,2
+3838,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+3912,Micrococcus luteus,2,µM; µg/ml,2
+4321,Micrococcus luteus A270,2,µM; µg/ml,2
+447,Staphylococcus aureus MR,2,µM; µg/ml,2
+447,Streptococcus pneumoniae ATCC 49619,2,µM; µg/ml,2
+4535,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+4726,Salmonella enterica subsp. enterica serovar Typhi,2,µM; µg/ml,2
+4726,Vibrio cholerae,2,µM; µg/ml,2
+4867,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+491,Escherichia coli ATCC 11775,2,µM; µg/ml,2
+491,Klebsiella pneumoniae,2,µM; µg/ml,2
+491,Staphylococcus aureus ATCC 29213,2,µM; µg/ml,2
+4969,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+506,Escherichia coli,2,µM; µg/ml,2
+5100,Staphylococcus aureus,2,µM; µg/ml,2
+5187,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+5278,Staphylococcus aureus,2,µM; µg/ml,2
+5385,Enterococcus faecalis ATCC 29212,2,µM; µg/ml,2
+5385,Escherichia coli,2,µM; µg/ml,2
+5385,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+5385,Pseudomonas aeruginosa,2,µM; µg/ml,2
+5385,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+5385,Staphylococcus aureus,2,µM; µg/ml,2
+5385,Staphylococcus aureus ATCC 29213,2,µM; µg/ml,2
+5467,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+5623,Candida albicans,2,µM; µg/ml,2
+5623,Escherichia coli,2,µM; µg/ml,2
+569,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+569,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+569,Staphylococcus aureus ATCC 29213,2,µM; µg/ml,2
+5852,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+5852,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+6384,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+6669,Acinetobacter baumannii,2,µM; µg/ml,2
+672,Acinetobacter baumannii,2,µM; µg/ml,2
+672,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+708,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+7115,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+7115,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+7127,Salmonella typhimurium KCTC 2370,2,µM; µg/ml,2
+7145,Salmonella enterica subsp. enterica serovar Typhimurium C77-31,2,µM; µg/ml,2
+716,Staphylococcus aureus,2,µM; µg/ml,2
+7162,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+717,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+717,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+7484,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+759,Acinetobacter baumannii,2,µM; µg/ml,2
+764,Acinetobacter baumannii,2,µM; µg/ml,2
+764,Escherichia coli HB101,2,µM; µg/ml,2
+7702,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+7733,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+779,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+8085,Klebsiella pneumoniae,2,µM; µg/ml,2
+8092,Staphylococcus aureus,2,µM; µg/ml,2
+814,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+814,Klebsiella pneumoniae ATCC 13883,2,µM; µg/ml,2
+814,Klebsiella pneumoniae ATCC 700603,2,µM; µg/ml,2
+814,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+814,Staphylococcus aureus ATCC 43300,2,µM; µg/ml,2
+850,Citrobacter freundii,2,µM; µg/ml,2
+850,Enterobacter cloacae,2,µM; µg/ml,2
+852,Klebsiella pneumoniae ATCC 13883,2,µM; µg/ml,2
+852,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+8646,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+8646,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+8646,Staphylococcus aureus ATCC 29213,2,µM; µg/ml,2
+874,Staphylococcus aureus,2,µM; µg/ml,2
+8787,Staphylococcus aureus 31,2,µM; µg/ml,2
+8788,Staphylococcus aureus 31,2,µM; µg/ml,2
+8864,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+8864,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
+919,Acinetobacter baumannii,2,µM; µg/ml,2
+9493,Pseudomonas aeruginosa ATCC 9027,2,µM; µg/ml,2
+9753,Acinetobacter baumannii ATCC 19606,2,µM; µg/ml,2
+9753,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+9753,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+9754,Acinetobacter baumannii ATCC 19606,2,µM; µg/ml,2
+9754,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+9754,Pseudomonas aeruginosa ATCC 27853,2,µM; µg/ml,2
+9823,Candida albicans ATCC 10231,2,µM; µg/ml,2
+9823,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+9824,Candida albicans ATCC 10231,2,µM; µg/ml,2
+9924,Escherichia coli ATCC 25922,2,µM; µg/ml,2
+9924,Staphylococcus aureus ATCC 25923,2,µM; µg/ml,2
