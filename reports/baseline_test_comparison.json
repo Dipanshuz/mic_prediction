@@ -1,0 +1,18 @@
+[
+  {
+    "model":"Sequence + target",
+    "split":"test",
+    "rows":3442,
+    "MAE_log10":0.4180360595,
+    "RMSE_log10":0.5245984879,
+    "R2":0.3008072925
+  },
+  {
+    "model":"Target only",
+    "split":"test",
+    "rows":3442,
+    "MAE_log10":0.4678973143,
+    "RMSE_log10":0.5887195574,
+    "R2":0.1194383891
+  }
+]
