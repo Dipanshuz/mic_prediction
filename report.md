@@ -67,3 +67,46 @@ See `repeated_measurements.csv`, `inconsistent_unit_pairs.csv`, and `summary.jso
 - Range and threshold measurements are counted separately and excluded from exact-value mean, median, quantile, and histogram calculations.
 - Target labels are reported exactly as supplied by DBAASP; species-level labels are not treated as confirmed strains.
 - For a multimer with no parent sequence, length uses the sum of monomer sequence lengths when available; this is a component-length sum, not a claim that the chains form one linear sequence.
+
+
+
+# Guide 
+
+## Task 
+1. **Verify:** Verify units of the concentration and $MIC_{} \mu M$ column. Compare values column by column or use the original dataset again
+2. **Clean the MIC values:** Check for missing values, negative records, duplicate records, units and extreme values. Preserve the orignals and flag <, > or 8-12 value. Keep them aside for now. 
+3. **Calculate pMIC:** if not already Calculated use the formula below. $$\mathrm{pMIC}=6-\log_{10}(\mathrm{MIC}_{\mu M})$$
+4. **Standardize the bacteria:** Leave strain out for now and find out how these ESKAPEE group bacteria are distributed. Use the key below. there might be some spelling misalignment possible try checking for these group only. Report with number of pathogens per sequence and number of sequence with all the ESKAPEE group pathogens. Below are the pathogen group members.
+	1. 1. **E**nterococcus faecium (Gram-positive)
+	2. **S**taphylococcus aureus (Gram-positive)
+	3. **K**lebsiella pneumoniae (Gram-negative)
+	4. **A**cinetobacter baumannii (Gram-negative)
+	5. **P**seudomonas aeruginosa (Gram-negative)
+	6. **E**nterobacter species (Gram-negative)
+	7. **E**scherichia coli (Gram-negative)^[Used in expanded group of pathogens]
+5. **For a prediction in pMIC:** This allows you to explain results in familiar concentration units. $$\widehat{\mathrm{MIC}}_{\mu M}=10^{6-\widehat{\mathrm{pMIC}}}$$ A pMIC prediction error of one unit corresponds to a tenfold difference in MIC. You can also report the proportion of predictions within twofold or fourfold of the experimental MIC.
+6. **Common Sequences:** Use CD-HIT with 80% homology split. although before going on the model training and CD-HIT, share the dataset with me.
+   ```
+   target_columns = [
+    "target_original", "species_name",
+    "strain_name", "bacteria_type", "target_level"
+]
+   ```
+
+## Metrics
+
+| Metric               | What it tells you                                                       |
+| -------------------- | ----------------------------------------------------------------------- |
+| MAE                  | Average absolute prediction error; lower is better.                     |
+| RMSE                 | Penalizes large prediction errors more strongly; lower is better.       |
+|                      | Measures predictive performance relative to a mean-prediction baseline. |
+| Spearman correlation | Measures whether the model ranks peptides by potency correctly.         |
+## New columns
+
+Use the target species column and make new columns as follows 
+```
+target_columns = [
+    "target_original", "species_name",
+    "strain_name", "bacteria_type", "target_level"
+]
+```
